@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorizer Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Memorizer Game</h1>
+
+        <!-- Displayed Digit -->
+        <h2 id="score-title" class="hidden">Your Score:</h2>
+        <div id="display-digit" class="digit-display">
+            0
+        </div>
+
+        <div id="game-over" class="hidden game-over">
+            <h2>Correct Answer:</h2>
+            <div id="final-answer" class="final-digits"></div>
+
+            <h2>Your Answer:</h2>
+            <div id="user-final-answer" class="wrong"></div>
+            <div class="restart-btn-container">
+                <button id="restart-btn" class="restart-btn">Play Again<img src="imgs/restart.png" alt="restart"></button>
+                <button id="main-menu-btn" class="submit-btn">Main Menu</button>
+            </div>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <label for="user-input">Enter digits in order:</label>
+            <input id="user-input" type="text" class="digit-input" maxlength="" placeholder="Enter Digits">
+            <button id="submit-btn" class="submit-btn">Submit</button>
+        </div>
+
+        <!-- Message Section -->
+        <div id="message" class="message">
+            <p>Keep going! Memorize the digits.</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
