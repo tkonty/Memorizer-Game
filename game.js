@@ -54,7 +54,7 @@ restartButtonElement.addEventListener('click', () => {
 })
 
 mainMenuButtonElement.addEventListener('click', () => {
-    window.location.href = 'start.html';
+    window.location.href = 'index.html';
 })
 
 userInputElement.addEventListener('keydown', function(event) {
